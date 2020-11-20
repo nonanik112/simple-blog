@@ -1,0 +1,8 @@
+var element = document.getElementById('element-<%= @element.id %>-form');
+
+element.class.add(d-none)
+element.previousElemnetSibling.classList.remove('d-none')
+
+var html = "<div class='trix-content' ><%= @element.content.body.html_safe %></div>"
+
+element.previousElemnetSibling.innerHTML = html
